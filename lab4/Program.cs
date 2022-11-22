@@ -1,12 +1,15 @@
 ﻿using System;
+using System.Diagnostics;
 
-namespace lab4
+namespace Debugger
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            var typeDebugger = new TypeDebugger();
+
+            typeDebugger.Debugger("lab4", 10, 10.10);
         }
     }
 }
